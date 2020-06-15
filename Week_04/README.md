@@ -118,3 +118,33 @@
 
 7. 贪心算法与动态规划的不同在于它对每个子问题的解决方案都做出选择，不能回退。动态规划则会保存以前的运算结果，并根据以前的结果对当前进行选择，有回退功能。
 
+
+
+## 第11课 二分查找
+
+1. 二分查找的前提
+
+   - 目标函数单调性（单调递增或单调递减）
+   - 存在上下界（bounded）
+   - 能够通过索引访问（index accessible）
+
+2. 代码模板
+
+   ```python
+   left, right = 0, len(array)-1
+   while left <= right:
+       mid = (left+right)/2
+       if array[mid] == target:
+           # find the target!!!
+           break or return result
+       elif array[mid] < target:
+           left = mid + 1
+       else:
+           right = mid - 1
+   ```
+
+   
+
+3. 
+
+4. 
